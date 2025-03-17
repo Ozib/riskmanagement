@@ -1,0 +1,4 @@
+ID;mitigations_id;title;prio;impact;criticality;desc;supplier_BusinessPartner
+20466922-7d57-4e76-b14c-e53fd97dcb11;20466921-7d57-4e76-b14c-e53fd97dcb11;CFR non-compliance;1;10000;2;;
+20466922-7d57-4e76-b14c-e53fd97dcb12;20466921-7d57-4e76-b14c-e53fd97dcb12;SLA violation with possible termination cause;2;90000;3;;
+20466922-7d57-4e76-b14c-e53fd97dcb13;20466921-7d57-4e76-b14c-e53fd97dcb13;Shipment violating export control;1;200000;2;;
