@@ -20,14 +20,19 @@
   "devDependencies": {
     "@cap-js/cds-types": "^0.9.0",
     "@cap-js/sqlite": "^1",
-    "@sap/dev-cap-tools": "^1.31.0"
+    "@sap/dev-cap-tools": "^1.31.0",
+    "rimraf": "^5.0.5",
+    "mbt": "^1.2.29"
   },
   "scripts": {
     "start": "cds-serve",
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-riskmanagement.risk": "cds watch --open riskmanagement.risk/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-riskmanagement.risk": "cds watch --open riskmanagement.risk/webapp/index.html?sap-ui-xx-viewCache=false",
+    "undeploy": "cf undeploy RiskManagement --delete-services --delete-service-keys --delete-service-brokers",
+    "build": "rimraf resources mta_archives && mbt build --mtar archive",
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
   },
   "cds": {
     "sql": {
