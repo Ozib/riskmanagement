@@ -110,7 +110,7 @@ modules:
               sap.build.usage: CAP
               sap.processautomation.enabled: false
               HTML5.DynamicDestination: false
-              WebIDEEnabled: false
+              WebIDEEnabled: true
               MobileEnabled: false
               AppgyverEnabled: false
     build-parameters:

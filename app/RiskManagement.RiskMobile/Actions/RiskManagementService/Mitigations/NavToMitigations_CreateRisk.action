@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/RiskMobile/Pages/RiskManagementService_Mitigations/Mitigations_CreateRisk.page",
+    "_Type": "Action.Type.Navigation"
+}
